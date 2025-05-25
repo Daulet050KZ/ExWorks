@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Лента | Ex Works</title>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/search.css">
+
+	<link rel="stylesheet" href="/css/header.css">
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/footer.css">
+
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="header__brand">
+				<img src="/img/logo.png" alt="">
+				<h2>EX Works | Crossout</h2>
+			</div>
+
+			<div class="header__nav">
+				<a href="/index.html" class="currentPage">Лента</a>
+				<a href="/templates/Locations/index.html">Картотека</a>
+				<a href="/templates/Artworks/index.html">Фотогазета</a>
+				<a href="/templates/Characters/index.html">Персонажи</a>
+				<a href="/templates/Co__Authors/index.html">Соавторство</a>
+				<a href="/templates/Paintshop/index.html">Покрасочная</a>
+				<a href="/templates/Fractions/index.html">Группировки</a>
+				<a href="/templates/Historys/index.html">Книжная полка</a>
+				<a href="/templates/Transport__Archive/index.html">Транспортный архив</a>
+				<a href="/templates/Car__Brands/index.html">Автомобильные марки</a>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="container">
+			<aside id="sidebar__left">
+				<div class="sideBar__profile sideBarItem">
+					<div class="sideBar__center sBP">
+						<img src="/img/unknown-user.png" alt="">
+						<a href="">
+							<p style="color: #a5a5a5;">Войти в профиль</p>
+							<p style="color: #393939;">чтобы оценивать посты и оставлять комментарии</p>
+						</a>
+					</div>
+				</div>
+
+				<div class="sideBar__filter sideBarItem">
+					<span style="margin-bottom: 5px;">Скрыть фильтр ∧</span>
+					<div class="sideBar__center sBF">
+						<div class="sBF__category">
+							<span><span>∧</span> Отображать посты категории:</span>
+
+							<div style="height: 10px;"></div>
+
+							<label for=""><div class="flagBTN"></div> Автомобильные марки</label>
+							<div style="height: 5px;"></div>
+							<label for=""><div class="flagBTN"></div> Транспортный архив</label>
+							<div style="height: 5px;"></div>
+							<label for=""><div class="flagBTN"></div> Книжная полка</label>
+							<div style="height: 5px;"></div>
+							<label for=""><div class="flagBTN"></div> Покрасочная</label>
+							<div style="height: 5px;"></div>
+							<label for=""><div class="flagBTN"></div> Фотогазета</label>
+							<div style="height: 5px;"></div>
+							<label for=""><div class="flagBTN"></div> Группировки</label>
+							<div style="height: 5px;"></div>
+							<label for=""><div class="flagBTN"></div> Картотека</label>
+							<div style="height: 5px;"></div>
+							<label for=""><div class="flagBTN"></div> Персонажи</label>
+						</div>
+
+						<div class="sBF__period">
+							<div style="height: 10px;"></div>
+							<span><span>∧</span> Показать посты за:</span>
+							<div style="height: 10px;"></div>
+
+							<label for=""><div class="flagBTN"></div> Последнюю неделю</label>
+							<div style="height: 5px;"></div>
+							<label for=""><div class="flagBTN"></div> Последний месяц</label>
+							<div style="height: 5px;"></div>
+							<label for=""><div class="flagBTN"></div> Последний день</label>
+							<div style="height: 5px;"></div>
+							<label for=""><div class="flagBTN"></div> Выбор периода:</label>
+							<div style="height: 5px;"></div>
+
+							<div class="sBFp__date">
+								<h1 id="sBFp__date_from">00.00.0000</h1>
+								<span><i class="fa-solid fa-calendar-days"></i></span>
+								<h1 id="sBFp__date_to" class="dateSelected">00.00.0000</h1>
+							</div>
+						</div>
+						<div style="height: 10px;"></div>
+
+						<div id="sBF__calendar">
+							<div class="sBF__calendar-1">
+								<span>От</span>
+								<span style="margin: 0 5px;">Сегодня</span>
+								<!-- <span>Сегодня</span> -->
+								<span>До</span>
+							</div>
+
+							<div style="height: 5px;"></div>
+
+							<div class="sBF__calendar-2">
+								<span style="width: 100%;">Месяц 2000 г.</span>
+								<span style="margin:0 5px;"><i class="fa-solid fa-angle-up"></i></span>
+								<span><i class="fa-solid fa-angle-down"></i></span>
+							</div>
+
+							<div style="height: 5px;"></div>
+
+							<div class="sBF__calendar-3">
+								<span>ПН</span>
+								<span>ВТ</span>
+								<span>СР</span>
+								<span>ЧТ</span>
+								<span>ПТ</span>
+								<span>СБ</span>
+								<span>ВС</span>
+							</div>
+
+							<!-- <div style="height: 5px;"></div> -->
+
+							<div class="sBF__calendar-days">
+								<span class="currentMonthDay">1</span>
+								<div style="width: 5px;"></div>
+								<span class="currentMonthDay">2</span>
+								<div style="width: 5px;"></div>
+								<span class="currentMonthDay">3</span>
+								<div style="width: 5px;"></div>
+								<span class="currentMonthDay">4</span>
+								<div style="width: 5px;"></div>
+								<span class="currentMonthDay">5</span>
+								<div style="width: 5px;"></div>
+								<span class="currentMonthDay">6</span>
+								<div style="width: 5px;"></div>
+								<span class="currentMonthDay">7</span>
+								<span class="currentMonthDay">8</span>
+								<div style="width: 5px;"></div>
+								<span class="currentMonthDay">9</span>
+								<div style="width: 5px;"></div>
+								<span class="currentMonthDay">10</span>
+								<div style="width: 5px;"></div>
+								<span class="currentMonthDay">11</span>
+								<div style="width: 5px;"></div>
+								<span class="currentMonthDay">12</span>
+								<div style="width: 5px;"></div>
+								<span class="currentMonthDay">13</span>
+								<div style="width: 5px;"></div>
+								<span class="currentMonthDay">14</span>
+								<span class="currentMonthDay">15</span>
+								<div style="width: 5px;"></div>
+								<span class="currentMonthDay">16</span>
+								<div style="width: 5px;"></div>
+								<span class="currentMonthDay">17</span>
+								<div style="width: 5px;"></div>
+								<span class="currentMonthDay">18</span>
+								<div style="width: 5px;"></div>
+								<span class="currentMonthDay">19</span>
+								<div style="width: 5px;"></div>
+								<span class="currentMonthDay">20</span>
+								<div style="width: 5px;"></div>
+								<span class="currentMonthDay">21</span>
+								<span class="currentMonthDay">22</span>
+								<div style="width: 5px;"></div>
+								<span class="currentMonthDay">23</span>
+								<div style="width: 5px;"></div>
+								<span class="currentMonthDay">24</span>
+								<div style="width: 5px;"></div>
+								<span class="currentMonthDay">25</span>
+								<div style="width: 5px;"></div>
+								<span class="currentMonthDay">26</span>
+								<div style="width: 5px;"></div>
+								<span class="currentMonthDay">27</span>
+								<div style="width: 5px;"></div>
+								<span class="currentMonthDay">28</span>
+								<span class="currentMonthDay">29</span>
+								<div style="width: 5px;"></div>
+								<span class="currentMonthDay">30</span>
+								<div style="width: 5px;"></div>
+								<span class="currentMonthDay">31</span>
+								<div style="width: 5px;"></div>
+								<span class="clearDay"></span>
+								<div style="width: 5px;"></div>
+								<span class="clearDay"></span>
+								<div style="width: 5px;"></div>
+								<span class="clearDay"></span>
+								<div style="width: 5px;"></div>
+								<span class="clearDay"></span>
+							</div>
+						</div>
+
+						<div class="sBF__rates">
+							<div style="height: 10px;"></div>
+							<span><span>∧</span> Показать посты с оценкой:</span>
+							<div style="height: 10px;"></div>
+							
+							<label for=""><div class="flagBTN"></div> ★ ★ ★ ★ ★</label>
+							<div style="height: 5px;"></div>
+							<label for=""><div class="flagBTN"></div> ★ ★ ★ ★</label>
+							<div style="height: 5px;"></div>
+							<label for=""><div class="flagBTN"></div> ★ ★ ★</label>
+							<div style="height: 5px;"></div>
+							<label for=""><div class="flagBTN"></div> ★ ★</label>
+							<div style="height: 5px;"></div>
+							<label for=""><div class="flagBTN"></div> ★</label>
+						</div>
+
+						<div style="height: 10px;"></div>
+						<button class="contentBTN" style="background-color: #222;">Сбросить фильтр</button>
+					</div>
+				</div>
+			</aside>
+
+			<div id="block__content">
+				<div id="search">
+					<i class="fa-solid fa-magnifying-glass"></i>
+					<input type="text" placeholder="Поля поиска">
+				</div>
+
+				<div class="content__section"></div>
+
+				<div class="content">
+					<div class="content__info">
+						<div class="content__info-category">
+							<span>id: 459</span>
+
+							<i class="fa-solid fa-user"></i>
+							<i class="fa-solid fa-flag"></i>
+							<i class="fa-solid fa-car"></i>
+							<i class="fa-solid fa-key"></i>
+							<i class="fa-solid fa-map-location-dot"></i>
+							<i class="fa-solid fa-book"></i>
+						</div>
+
+						<div class="content__info-rates">
+							<span>☆</span>
+							<span>☆</span>
+							<span>☆</span>
+							<span>☆</span>
+							<span>☆</span>
+						</div>
+
+						<span style="margin-right: 0;">Опубликовано: 15.03.2024 г.</span>
+					</div>
+
+					<div class="content__main">
+						<span>Первоисточник: VK Group / EX Works I Crossout / Post "Exmule"</span>
+
+						<div class="content__main-btns">
+							<button class="contentBTN">Узнать больше</button>
+							<div class="content__main-section"></div>
+							<button class="contentBTN">Транспортный архив</button>
+						</div>
+
+						<h1>◁ Exmule ▷</h1>
+
+						<p lang="ru">Грузовик мастерской Exnewest. Построен на раме длиннобазной Зари, тщательно отремонтированной и качественно модифицированной самим Яразом. В основном используется для транспортировки огромных объёмов запчастей, но и любая другая подходящая работа ему по плечу.</p>
+
+						<div class="content__images-TransportArchive">
+							<img src="/img/exw-TA-1.jpg" alt="">
+							<img src="/img/exw-TA-2.jpg" alt="">
+						</div>
+					</div>
+					
+					<div class="content__comment">
+						<span>Показать комментарии ∨</span>
+					</div>
+				</div>
+			</div>
+
+			<aside id="sidebar__right">
+				<div class="sideBar__bookmark sideBarItem">
+					<span id="" style="margin-bottom: 5px;">Скрыть закладки ∧</span>
+					<div class="sideBar__center">
+						
+					</div>
+				</div>
+			</aside>
+		</div>
+	</main>
+
+	<footer></footer>
+</body>
+</html>
