@@ -1,0 +1,682 @@
+main {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 15px 0;
+}
+
+/* SIDEBAR  */
+
+aside {
+	display: flex;
+	flex-direction: column;
+	min-width: 300px;
+	height: 100px;
+/*	background-color: darkred;*/
+}
+
+.sideBarItem {
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+/*	text-align: center;*/
+	padding: 5px;
+	background-color: #222;
+	border: 2px solid #393939;
+
+	font-family: "Isocpeur";
+	font-size: 16px;
+	color: #8C8C8C;
+	font-weight: 700;
+}
+
+.sideBarItem > span {
+	text-align: center;
+}
+
+.sideBar__center {
+	background-color: #141414;
+	border: 2px solid #000;
+	width: 100%;
+	min-height: 74px;
+	height: 100%;
+	padding: 5px;
+
+	font-family: "Isocpeur";
+	font-size: 16px;
+}
+
+#sidebar__left {
+
+}
+
+.sBP { /* Сайдбар профиль */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sBP > img {
+	width: 60px;
+	height: 60px;
+}
+
+.sBP > a {
+	text-align: center;
+	font-weight: 700;
+}
+
+.sBF { /* Сайдбар фильтр */
+	display: flex;
+	flex-direction: column;
+	color: #8C8C8C;
+	font-weight: 700;
+}
+
+.sBF > div {
+	display: flex;
+	flex-direction: column;
+}
+
+.sBF > div > span {
+/*	margin-bottom: 7.5px;*/
+}
+
+.sBF > div > label {
+	display: flex;
+	cursor: pointer;
+}
+.sBF > div > label:hover {
+	color: #fff;
+}
+
+.sBF > div > label > .flagBTN {
+	margin-right: 10px;
+}
+
+.sBFp__date {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.sBFp__date > h1 {
+	font-family: 'ISOCPEUR';
+	padding: 5px;
+	border: 2px solid #393939;
+	background-color: #222;
+	width: calc(100% / 2);
+	height: 33px;
+	font-size: 16px;
+	text-align: center;
+	color: #8C8C8C50;
+}
+
+#sBFp__date_from.dateSelected,
+#sBFp__date_to.dateSelected {
+	color: #8C8C8C;
+}
+
+.sBFp__date > span {
+	min-width: 33px;
+	height: 33px;
+	margin: 0px 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	color: #8C8C8C;
+	cursor: pointer;
+}
+
+.sBFp__date > span:hover {
+/*	color: #f98d00;*/
+	color: #fff;
+}
+
+#sBF__calendar {
+/*	height: 100px;*/
+	background-color: #000;
+	border: 2px solid #393939;
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+}
+
+#sBF__calendar > div {
+	display: flex;
+	justify-content: space-between;
+}
+
+#sBF__calendar > div > span {
+	text-align: center;
+	padding: 5px;
+	background-color: #222;
+	border: 2px solid #393939;
+	height: 32px;
+}
+
+.currentMonthDay {
+	cursor: pointer;
+}
+
+#sBF__calendar > div > span:hover {
+	color: #fff;
+}
+
+.sBF__calendar-1 > span {
+	width: calc(100% / 3);
+}
+
+.sBF__calendar-2 > span {
+	min-width: 32px;
+}
+
+.sBF__calendar-3 > span {
+/*	width: calc(100% / 7 - 5px);*/
+	width: 32px;
+}
+
+.sBF__calendar-days {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	overflow-x: hidden;
+}
+
+.sBF__calendar-days > span {
+	width: 32px;
+	margin-top: 5px;
+}
+
+.sBF__calendar-days > span.clearDay {
+	opacity: 0.5;
+	cursor: auto;
+}
+
+.sBL { /* Сайдбар легенда */
+	width: 100%;
+	min-height: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.sBL > span {
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.sBL > p {
+	color: #8C8C8C;
+	font-size: 16px;
+	font-weight: 700;
+	font-family: "ISOCPEUR";
+	line-height: 20px;
+
+	hyphens: auto;
+	text-align: justify;
+}
+
+.sBA { /* Сайдбар реклама */
+	width: 100%;
+	display: flex;
+	padding: 0;
+}
+
+.sBA > img {
+	width: 100%;
+}
+
+#sidebar__right {
+	
+}
+
+.sBQ {
+	padding: 0px 10px 0px;
+}
+
+.sBQ > div {
+	border-bottom: 2px solid #222;
+	margin: 10px 0;
+}
+
+.sBQ > div > span {
+	display: flex;
+	justify-content: space-between;
+	color: #8C8C8C80;
+	font-weight: 700;
+}
+
+#block__content {
+	margin: 0px 10px;
+	display: flex;
+	flex-direction: column;
+	min-width: 907px;
+}
+
+.content__section {
+	height: 10px;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 5px;
+	border: 2px solid #393939;
+	background-color: #222;
+	width: 100%;
+}
+
+/* Лента  */
+
+.content__info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	border-bottom: 2px solid #393939;
+	padding-bottom: 5px;
+}
+
+.content__info > span,
+.content__info-category > span {
+	color: #8C8C8C;
+	font-size: 16px;
+	font-weight: 700;
+	font-family: "ISOCPEUR";
+	margin-right: 4px;
+}
+
+.content__info-category > i {
+	margin: 0px 1px;
+	font-size: 14px;
+	color: #a5a5a540;
+}
+
+.content__info-rates {
+	font-size: 18px;
+	color: #8C8C8C;
+}
+
+.content__main {
+	padding: 5px 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.content__main > span,
+.content__comment > span {
+	color: #8C8C8C;
+	font-size: 16px;
+	font-weight: 700;
+	font-family: "ISOCPEUR";
+	margin: 5px 0;
+}
+
+.content__main-btns {
+	display: flex;
+	width: 100%;
+	margin: 5px 0;
+}
+
+.content__main-section {
+	min-width: 5px;
+}
+
+.content__main > h1 {
+	color: #8C8C8C;
+	font-size: 22px;
+	font-family: "ISOCPEUR";
+	line-height: 22px;
+	margin: 5px 0;
+}
+
+.content__main > p {
+	color: #8C8C8C;
+	font-size: 22px;
+	font-weight: 700;
+	font-family: "ISOCPEUR";
+	line-height: 22px;
+	margin: 5px 0;
+
+	hyphens: auto;
+}
+
+.content__images-TransportArchive {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.content__images-TransportArchive > img {
+	width: calc(100% / 2 - 2.5px);
+	border: 2px solid #000;
+	cursor: pointer;
+}
+
+/* Картотека */
+
+.content__locations-info {
+	display: flex;
+	justify-content: space-between;
+	background-color: #141414;
+	border: 2px solid #000;
+	width: 100%;
+	padding: 5px 5px 10px;
+	margin-bottom: 5px;
+}
+
+.content__locations-info > h1 {
+	color: #a5a5a5;
+	font-size: 30px;
+	line-height: 30px;
+	font-family: 'Jura';
+}
+
+#content__locations-map {
+	display: flex;
+	width: 100%;
+	border: 2px solid #000;
+}
+
+#content__locations-map > img {
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+.content__paintshop {
+	width: 100%;
+	height: 250px;
+
+	background-color: #000;
+	border: 2px solid #000;
+	display: flex;
+	position: relative;
+	overflow: hidden;
+}
+
+.content__paintshop-info {	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10;
+
+	width: 100%;
+	height: 100%;
+}
+
+.content__paintshop-info-left {	
+	display: flex;
+	flex-direction: column;
+
+	max-width: 300px;
+	height: 100%;
+	padding: 20px 15px;
+
+	background: linear-gradient(90deg, #00000080, #00000080, #00000080, #00000080, #00000080, transparent);
+}
+
+.content__paintshop-info-left > h2 {	
+	color: #fff;
+	font-size: 48px;
+	line-height: 48px;
+	font-family: 'Aero Matics Stencil';
+}
+
+.content__paintshop-info-left > span {	
+	color: #a5a5a5;
+	font-size: 18px;
+	font-family: 'ISOCPEUR';
+	font-weight: 700;
+
+	hyphens: auto;
+	text-align: justify;
+}
+
+.content__paintshop-info-right {	
+	display: flex;
+	flex-direction: column;
+
+	padding: 5px;
+	margin: 20px 15px;
+	background-color: #00000080;
+
+}
+
+.content__paintshop-info-right > label {	
+	width: 65px;
+	height: 65px;
+	border: 2px solid #000;
+	background-color: #393939;
+
+	cursor: pointer;
+}
+
+.content__paintshop-info-right > div {	
+	height: 5px;
+}
+
+.content__paintshop > img {
+	width: 1000px;
+	height: 562.50px;
+
+	position: absolute;
+	z-index: 1;
+	top: -150px;
+	left: -50px;
+	transform: scale(-1, 1);
+
+	transition: 0.3s;
+}
+
+.content__artworks {
+	width: 100%;
+	height: 250px;
+
+	background-color: #000;
+	border: 2px solid #000;
+	display: flex;
+	position: relative;
+	overflow: hidden;
+}
+
+.content__artworks-info {	
+	display: flex;
+	flex-direction: column;
+
+	max-width: 430px;
+	height: 100%;
+	padding: 20px 15px;
+
+	z-index: 1;
+
+	background: linear-gradient(90deg, #00000080, #00000080, #00000080, #00000080, #00000080, transparent);
+}
+
+.content__artworks-info > h2 {	
+	color: #fff;
+	font-size: 48px;
+	line-height: 48px;
+	font-family: 'Aero Matics Stencil';
+}
+
+.content__artworks-info > span {	
+	color: #a5a5a5;
+	font-size: 18px;
+	font-family: 'ISOCPEUR';
+	font-weight: 700;
+
+	hyphens: auto;
+	text-align: justify;
+}
+
+.content__artworks-backImagesUp {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: -5%;
+
+	width: 110%;
+	height: 100%;
+	overflow-x: hidden;
+}
+
+.content__artworks-backImagesUp > label {
+	height: 100%;
+	transform: skew(-15deg);
+
+	background-size: cover;
+	overflow: hidden;
+}
+
+.content__artworks-backImagesUp > label > img {
+	height: 100%;
+	transform: skew(15deg);
+	margin-left: -35px;
+}
+
+.content__artworks-skewsUp {
+	display: flex;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: -5%;
+	width: 110%;
+	height: 100%;
+
+	cursor: pointer;
+
+}
+
+.content__artworks-skewsUp > label {
+	height: 100%;
+	transform: skew(-15deg);
+}
+
+.content__artworks-backImagesDown {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: -5%;
+
+	width: 110%;
+	height: 100%;
+	overflow-x: hidden;
+}
+
+.content__artworks-backImagesDown > label {
+	height: 100%;
+	transform: skew(15deg);
+
+	background-size: cover;
+	overflow: hidden;
+}
+
+.content__artworks-backImagesDown > label > img {
+	height: 100%;
+	transform: skew(-15deg);
+	margin-left: -35px;
+}
+
+.content__artworks-skewsDown {
+	display: flex;
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: -5%;
+	width: 110%;
+	height: 100%;
+
+	cursor: pointer;
+
+}
+
+.content__artworks-skewsDown > label {
+	height: 100%;
+	transform: skew(15deg);
+}
+
+
+
+.content__location-guide {
+	background-size: 100% 100%;
+	width: 100%;
+	height: 175px;
+	background-color: #000;
+	border: 2px solid #000;
+	display: flex;
+	align-items: center;
+}
+
+.content__location-guide > div {
+	display: flex;
+	align-items: flex-end;
+
+	width: 100%;
+	height: 100%;
+	background-color: #00000070;
+	padding: 0px 5px 10px;
+	position: relative;
+}
+
+
+.content__location-guide > div > div {
+	display: flex;
+	flex-direction: column;
+
+	width: 220px;
+
+	font-family: 'ISOCPEUR';
+	font-weight: 700;
+	text-shadow: 0px 0px 8px #000;
+	text-align: justify;
+	hyphens: auto;
+	margin-right: 10px;
+}
+
+.content__location-guide > div > div > h2 {
+	color: #fff;
+	font-size: 22px;
+	margin-bottom: 5px;
+	position: absolute;
+	top: 10px;
+	text-align: left;
+}
+
+.content__location-guide > div > div > p {
+	color: #8C8C8C;
+	line-height: 20px;
+}
+
+.content__location-guide > div > img {
+	width: 210.75px;
+	height: 120px;
+	border: 2px solid #000;
+}
+
+#content__about {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin: 10px 0;
+
+	font-size: 16px;
+	font-family: 'ISOCPEUR';
+	font-weight: 700;
+	color: #393939;
+}
